@@ -1,0 +1,11 @@
+graphviz
+pandas
+numpy
+sklearn
+keras
+tensorflow
+pillow
+h5py
+matplotlib
+pydot
+

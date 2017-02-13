@@ -1,0 +1,50 @@
+Error code: 2
+Error description: Job exit code is not zero
+Stack trace: 
+Initializing machine ID from D-Bus machine ID.
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libnvidia-fbc.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libnvidia-encode.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libnvidia-cfg.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libnvidia-opencl.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libcuda.so.1 is not a symbolic link
+
+/sbin/ldconfig.real: /usr/lib/x86_64-linux-gnu/libnvidia-ifr.so.1 is not a symbolic link
+
+Exception:
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/pip/basecommand.py", line 122, in main
+    status = self.run(options, args)
+  File "/usr/lib/python2.7/dist-packages/pip/commands/install.py", line 278, in run
+    requirement_set.prepare_files(finder, force_root_egg_info=self.bundle, bundle=self.bundle)
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1198, in prepare_files
+    do_download,
+  File "/usr/lib/python2.7/dist-packages/pip/req.py", line 1376, in unpack_url
+    self.session,
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 572, in unpack_http_url
+    download_hash = _download_url(resp, link, temp_location)
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 433, in _download_url
+    for chunk in resp_read(4096):
+  File "/usr/lib/python2.7/dist-packages/pip/download.py", line 421, in resp_read
+    chunk_size, decode_content=False):
+  File "/usr/share/python-wheels/urllib3-1.7.1-py2.py3-none-any.whl/urllib3/response.py", line 225, in stream
+    data = self.read(amt=amt, decode_content=decode_content)
+  File "/usr/share/python-wheels/urllib3-1.7.1-py2.py3-none-any.whl/urllib3/response.py", line 174, in read
+    data = self._fp.read(amt)
+  File "/usr/lib/python2.7/httplib.py", line 573, in read
+    s = self.fp.read(amt)
+  File "/usr/lib/python2.7/socket.py", line 380, in read
+    data = self._sock.recv(left)
+  File "/usr/lib/python2.7/ssl.py", line 341, in recv
+    return self.read(buflen)
+  File "/usr/lib/python2.7/ssl.py", line 260, in read
+    return self._sslobj.read(len)
+SSLError: The read operation timed out
+
+Storing debug log for failure in /root/.pip/pip.log
+
